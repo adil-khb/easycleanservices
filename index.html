@@ -18,7 +18,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://easycleanservices.com.au">
 
-  <!-- Favicon (optional, uses icon logo) -->
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="ecs-logo-icon.png" />
 
   <!-- Schema.org LocalBusiness -->
@@ -241,7 +241,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 0.8rem;
-      margin: 1.6rem 0 1.1rem;
+      margin: 1.6rem 0 0.7rem;
     }
 
     .btn-primary {
@@ -266,22 +266,19 @@
       box-shadow: 0 22px 55px rgba(30, 64, 175, 0.55);
     }
 
-    .btn-ghost {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.62rem 1.25rem;
-      border-radius: 999px;
-      border: 1px solid rgba(148, 163, 184, 0.9);
+    .hero-contact {
+      margin-top: 0.4rem;
       font-size: 0.9rem;
-      color: var(--muted);
-      background: rgba(255, 255, 255, 0.9);
-      cursor: pointer;
+      color: #111827;
     }
 
-    .btn-ghost span {
-      font-size: 1.1rem;
-      margin-left: 0.3rem;
+    .hero-contact a {
+      color: #075985;
+      font-weight: 600;
+    }
+
+    .hero-contact a:hover {
+      color: #0ea5e9;
     }
 
     .hero-meta {
@@ -289,8 +286,7 @@
       flex-wrap: wrap;
       gap: 0.75rem;
       font-size: 0.86rem;
-      color: var(--muted);
-      margin-top: 0.4rem;
+      margin-top: 0.5rem;
     }
 
     .meta-pill {
@@ -298,6 +294,7 @@
       border-radius: 999px;
       background: rgba(255, 255, 255, 0.9);
       border: 1px solid rgba(209, 213, 219, 0.9);
+      color: var(--muted);
     }
 
     .hero-card {
@@ -330,15 +327,16 @@
     }
 
     .hero-card-tag {
-      padding: 0.22rem 0.7rem;
+      padding: 0.16rem 0.6rem;
       border-radius: 999px;
-      font-size: 0.75rem;
-      border: 1px solid rgba(245, 158, 11, 0.9);
-      background: #fef3c7;
+      font-size: 0.74rem;
+      border: 1px solid rgba(245, 158, 11, 0.8);
+      background: linear-gradient(to right, #fefce8, #fef9c3);
       display: inline-flex;
       align-items: center;
       gap: 0.3rem;
       color: #92400e;
+      white-space: nowrap;
     }
 
     .hero-card-tag span {
@@ -788,13 +786,14 @@
             <a href="mailto:info@easycleanservices.com.au" class="btn-primary">
               Email&nbsp;info@easycleanservices.com.au
             </a>
-            <button class="btn-ghost" type="button" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
-              View services <span>↓</span>
-            </button>
+          </div>
+
+          <div class="hero-contact">
+            Contact <strong>Mr Kavish</strong> on
+            <a href="tel:+61424861400">+61 424 861 400</a>
           </div>
 
           <div class="hero-meta">
-            <span>Contact <strong>Mr Kavish</strong> on <strong><a href="tel:+61424861400">+61 424 861 400</a></strong></span>
             <span class="meta-pill">DHA KPI achievement certificate</span>
             <span class="meta-pill">Commercial &amp; specialised cleaning</span>
           </div>
@@ -810,7 +809,8 @@
                 </div>
               </div>
               <div class="hero-card-tag">
-                <span>★★★★★</span> KPI Rating
+                <span>★★★★★</span>
+                <span>KPI rating</span>
               </div>
             </div>
 
@@ -842,7 +842,7 @@
           <div class="eyebrow">Services</div>
           <h2 class="section-title">What we clean (in simple words)</h2>
           <p class="section-desc">
-            Short headings. Small paragraphs. Real-world commercial and specialised cleaning across the Northern Territory.
+            Clear, practical commercial and specialised cleaning services for organisations across the Northern Territory.
           </p>
         </div>
 
@@ -850,10 +850,9 @@
           <!-- Commercial / Office -->
           <article class="service-card">
             <div class="service-img-wrap">
-              <!-- Aussie-looking office / commercial image -->
               <img class="service-img"
-                   src="https://images.pexels.com/photos/7648300/pexels-photo-7648300.jpeg?auto=compress&cs=tinysrgb&w=900"
-                   alt="Cleaner wiping glass in a modern office building">
+                   src="cleaning1.png"
+                   alt="Team performing commercial cleaning in a workplace">
               <span class="service-badge">Commercial</span>
             </div>
             <div class="service-body">
@@ -883,10 +882,9 @@
           <!-- Specialised -->
           <article class="service-card">
             <div class="service-img-wrap">
-              <!-- More “specialised cleaning” type image -->
               <img class="service-img"
-                   src="https://images.pexels.com/photos/6196518/pexels-photo-6196518.jpeg?auto=compress&cs=tinysrgb&w=900"
-                   alt="Cleaner using professional floor cleaning equipment">
+                   src="cleaning2.png"
+                   alt="Cleaner using professional floor and pressure cleaning equipment">
               <span class="service-badge">Specialised</span>
             </div>
             <div class="service-body">
@@ -948,7 +946,6 @@
         </div>
 
         <aside class="dha-card animate-in delay-2">
-          <!-- DHA certificate in root -->
           <img src="dha-certificate.png"
                alt="Defence Housing Australia Certificate of Achievement for Easy Clean Services">
         </aside>
@@ -962,14 +959,14 @@
           <div class="eyebrow">Service areas</div>
           <h2 class="section-title">Based in the Territory, covering three key regions</h2>
           <p class="section-desc">
-            We’re based in Katherine East and Berrimah, and operate across Katherine, Darwin and Alice Springs as whole regions – no made-up “Australia-wide” claims.
+            We operate across Katherine, Darwin and Alice Springs as whole regions – no made-up “Australia-wide” claims.
           </p>
         </div>
 
         <div class="locations-grid">
           <article class="location-card">
             <h3>Katherine, NT</h3>
-            <p>Commercial and specialised cleaning across Katherine and Katherine East.</p>
+            <p>Commercial and specialised cleaning across the Katherine region.</p>
             <p class="location-meta">
               Schools, childcare centres, government buildings, local businesses and body corporates.
             </p>
@@ -977,9 +974,9 @@
 
           <article class="location-card">
             <h3>Darwin, NT</h3>
-            <p>Commercial cleaning across Darwin, Berrimah, Palmerston and surrounding suburbs.</p>
+            <p>Commercial cleaning across the broader Darwin region.</p>
             <p class="location-meta">
-              Ideal for council facilities, pubs, medical and laboratory centres, and DHA-related work.
+              Council facilities, pubs and hospitality, medical and laboratory centres, and more.
             </p>
           </article>
 
