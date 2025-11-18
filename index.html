@@ -2,23 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Easy Clean Services | Cleaning Services in Katherine & Darwin NT</title>
+  <title>Easy Clean Services | Commercial Cleaning in Katherine, Darwin & Alice Springs</title>
 
   <!-- SEO -->
   <meta name="description"
-        content="Easy Clean Services provides professional residential, commercial, bond and NDIS cleaning in Katherine and Darwin, NT. Highly rated and trusted, with Defence Housing Australia achievement recognition." />
+        content="Easy Clean Services provides professional commercial, office and specialised cleaning in Katherine, Darwin and Alice Springs, NT. School cleaning, childcare, government, pubs, medical centres, carpet cleaning, pressure washing, strip & seal, mould remediation and more." />
   <meta name="keywords"
-        content="Katherine cleaning services, Darwin cleaning services, cleaners Katherine NT, cleaners Darwin NT, bond clean Katherine, bond clean Darwin, Easy Clean Services, NDIS cleaning, commercial cleaning" />
+        content="Katherine cleaning services, Darwin cleaning services, Alice Springs cleaning services, commercial cleaning, office cleaning, school cleaning, childcare cleaning, carpet cleaning, strip and seal, pressure cleaning, Easy Clean Services" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="index,follow" />
 
-  <!-- OG (nice preview on social, optional) -->
-  <meta property="og:title" content="Easy Clean Services | Cleaning Services in Katherine & Darwin NT">
-  <meta property="og:description" content="Professional, highly rated cleaning in Katherine and Darwin. Residential, commercial, bond and NDIS cleaning.">
+  <!-- OG -->
+  <meta property="og:title" content="Easy Clean Services | Commercial Cleaning in Katherine, Darwin & Alice Springs">
+  <meta property="og:description" content="Trusted commercial and specialised cleaning across Katherine, Darwin and Alice Springs. DHA-recognised performance, clear communication and reliable results.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://easycleanservices.com.au">
 
-  <!-- Schema.org LocalBusiness for SEO -->
+  <!-- Favicon (optional, uses icon logo) -->
+  <link rel="icon" type="image/png" href="ecs-logo-icon.png" />
+
+  <!-- Schema.org LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -26,47 +29,31 @@
     "name": "Easy Clean Services",
     "url": "https://easycleanservices.com.au",
     "email": "info@easycleanservices.com.au",
-    "address": [
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "11 Bradshaw Crescent, Katherine East",
-        "addressLocality": "Katherine",
-        "addressRegion": "NT",
-        "postalCode": "0850",
-        "addressCountry": "AU"
-      },
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "38 Reuben Avenue, Berrimah",
-        "addressLocality": "Darwin",
-        "addressRegion": "NT",
-        "postalCode": "0828",
-        "addressCountry": "AU"
-      }
-    ],
+    "telephone": "+61 424 861 400",
+    "image": "https://easycleanservices.com.au/ecs-logo-full.png",
     "areaServed": [
       "Katherine NT",
-      "Darwin NT"
+      "Darwin NT",
+      "Alice Springs NT"
     ],
     "priceRange": "$$",
-    "description": "Professional residential, commercial, bond and NDIS cleaning services in Katherine and Darwin, Northern Territory."
+    "description": "Professional commercial and specialised cleaning in Katherine, Darwin and Alice Springs, including schools, childcare, government, pubs, medical centres, carpet cleaning, strip & seal, pressure cleaning and more."
   }
   </script>
 
   <style>
     :root {
-      --bg: #050816;
-      --bg-soft: #070b1c;
-      --card: #0b1024;
-      --accent: #35b0ff;
-      --accent-soft: rgba(53, 176, 255, 0.12);
-      --accent-strong: #0ea5e9;
-      --accent-2: #a855f7;
-      --text: #e5e7eb;
-      --muted: #9ca3af;
-      --border-soft: rgba(148, 163, 184, 0.22);
+      --bg: #f3f4f8;
+      --bg-alt: #e5ecf8;
+      --card: #ffffff;
+      --accent: #0086d1;
+      --accent-strong: #0072b0;
+      --accent-2: #20b856;
+      --text: #0f172a;
+      --muted: #6b7280;
+      --border-soft: rgba(148, 163, 184, 0.35);
       --radius-lg: 18px;
-      --shadow-card: 0 22px 60px rgba(15, 23, 42, 0.65);
+      --shadow-soft: 0 18px 40px rgba(15, 23, 42, 0.08);
     }
 
     * {
@@ -78,7 +65,9 @@
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
                    "Segoe UI", sans-serif;
-      background: radial-gradient(circle at top, #1f2937 0, #020617 48%, #000 100%);
+      background:
+        radial-gradient(circle at top, rgba(191, 219, 254, 0.9) 0, transparent 50%),
+        linear-gradient(to bottom, #f9fafb, #e5e7eb);
       color: var(--text);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
@@ -99,20 +88,31 @@
       position: sticky;
       top: 0;
       z-index: 40;
-      backdrop-filter: blur(18px);
-      background: linear-gradient(to bottom, rgba(3, 7, 18, 0.9), transparent);
-      border-bottom: 1px solid rgba(31, 41, 55, 0.7);
+      backdrop-filter: blur(14px);
+      background: linear-gradient(to bottom, rgba(249, 250, 251, 0.96), rgba(249, 250, 251, 0.9));
+      border-bottom: 1px solid rgba(209, 213, 219, 0.9);
     }
 
     .nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0.8rem 0 0.9rem;
+      padding: 0.7rem 0 0.75rem;
       gap: 1.2rem;
     }
 
     .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .brand-logo {
+      width: 150px;
+      height: auto;
+    }
+
+    .brand-text {
       display: flex;
       flex-direction: column;
       gap: 0.1rem;
@@ -120,9 +120,10 @@
 
     .brand-name {
       font-weight: 700;
-      letter-spacing: 0.14em;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
-      font-size: 0.86rem;
+      font-size: 0.78rem;
+      color: #111827;
     }
 
     .brand-tagline {
@@ -134,24 +135,24 @@
       display: flex;
       align-items: center;
       gap: 1.1rem;
-      font-size: 0.88rem;
+      font-size: 0.9rem;
       color: var(--muted);
     }
 
     .nav-links a:hover {
-      color: var(--accent);
+      color: var(--accent-strong);
     }
 
     .pill-nav {
-      padding: 0.42rem 0.9rem;
+      padding: 0.42rem 0.95rem;
       border-radius: 999px;
-      border: 1px solid rgba(148, 163, 184, 0.55);
+      border: 1px solid rgba(148, 163, 184, 0.7);
       background: radial-gradient(circle at top left,
-                  rgba(56, 189, 248, 0.24),
-                  rgba(15, 23, 42, 0.9));
-      color: #eff6ff;
+                  rgba(191, 219, 254, 0.9),
+                  #ffffff);
+      color: #0f172a;
       font-weight: 500;
-      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 14px 30px rgba(15, 23, 42, 0.18);
     }
 
     .pill-nav:hover {
@@ -162,18 +163,36 @@
       padding-bottom: 3.5rem;
     }
 
+    /* Simple load-in animation */
+    .animate-in {
+      opacity: 0;
+      transform: translateY(18px);
+      animation: floatUp 0.7s ease-out forwards;
+    }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.3s; }
+    .delay-4 { animation-delay: 0.4s; }
+
+    @keyframes floatUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     /* Hero */
     .hero {
-      padding: 3.8rem 0 3.4rem;
+      padding: 3.2rem 0 3.1rem;
       background:
-        radial-gradient(circle at top, rgba(59, 130, 246, 0.18) 0, transparent 55%),
-        radial-gradient(circle at 80% 20%, rgba(236, 72, 153, 0.16) 0, transparent 55%);
+        radial-gradient(circle at top left, rgba(191, 219, 254, 1) 0, transparent 55%),
+        radial-gradient(circle at 80% 0, rgba(167, 243, 208, 0.7) 0, transparent 50%);
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
-      gap: 2.6rem;
+      grid-template-columns: minmax(0, 1.45fr) minmax(0, 1.1fr);
+      gap: 2.4rem;
       align-items: center;
     }
 
@@ -181,10 +200,10 @@
       display: inline-flex;
       align-items: center;
       gap: 0.45rem;
-      padding: 0.28rem 0.85rem;
+      padding: 0.3rem 0.85rem;
       border-radius: 999px;
       border: 1px solid rgba(148, 163, 184, 0.7);
-      background: rgba(15, 23, 42, 0.85);
+      background: rgba(255, 255, 255, 0.9);
       color: var(--muted);
       font-size: 0.78rem;
       margin-bottom: 1rem;
@@ -194,27 +213,28 @@
       width: 9px;
       height: 9px;
       border-radius: 999px;
-      background: radial-gradient(circle, #4ade80 0, #16a34a 55%, #052e16 100%);
-      box-shadow: 0 0 0 6px rgba(74, 222, 128, 0.18);
+      background: radial-gradient(circle, #22c55e 0, #15803d 60%, #052e16 100%);
+      box-shadow: 0 0 0 6px rgba(74, 222, 128, 0.32);
     }
 
     h1 {
-      font-size: clamp(2.32rem, 3.05vw + 1.5rem, 3.1rem);
+      font-size: clamp(2.3rem, 3vw + 1.6rem, 3rem);
       letter-spacing: -0.04em;
       line-height: 1.05;
       margin-bottom: 0.9rem;
+      color: #020617;
     }
 
     .hero-highlight {
-      background: linear-gradient(to right, #e5e7eb, #bae6fd);
+      background: linear-gradient(to right, #0369a1, #16a34a);
       -webkit-background-clip: text;
       color: transparent;
     }
 
     .hero-sub {
-      font-size: 0.98rem;
+      font-size: 1rem;
       color: var(--muted);
-      max-width: 38rem;
+      max-width: 40rem;
     }
 
     .hero-actions {
@@ -228,22 +248,22 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 0.7rem 1.5rem;
+      padding: 0.7rem 1.6rem;
       border-radius: 999px;
       border: none;
-      background: linear-gradient(135deg, var(--accent-strong), #22c55e);
-      color: #0b1120;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #ffffff;
       font-weight: 600;
-      font-size: 0.92rem;
-      box-shadow: 0 20px 40px rgba(8, 47, 73, 0.9);
+      font-size: 0.95rem;
+      box-shadow: 0 18px 40px rgba(37, 99, 235, 0.45);
       cursor: pointer;
       transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease;
     }
 
     .btn-primary:hover {
       transform: translateY(-1px);
-      filter: brightness(1.04);
-      box-shadow: 0 24px 60px rgba(15, 23, 42, 1);
+      filter: brightness(1.03);
+      box-shadow: 0 22px 55px rgba(30, 64, 175, 0.55);
     }
 
     .btn-ghost {
@@ -252,10 +272,10 @@
       justify-content: center;
       padding: 0.62rem 1.25rem;
       border-radius: 999px;
-      border: 1px solid rgba(148, 163, 184, 0.7);
+      border: 1px solid rgba(148, 163, 184, 0.9);
       font-size: 0.9rem;
       color: var(--muted);
-      background: rgba(15, 23, 42, 0.7);
+      background: rgba(255, 255, 255, 0.9);
       cursor: pointer;
     }
 
@@ -276,29 +296,18 @@
     .meta-pill {
       padding: 0.24rem 0.75rem;
       border-radius: 999px;
-      background: rgba(15, 23, 42, 0.85);
-      border: 1px solid rgba(55, 65, 81, 0.9);
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(209, 213, 219, 0.9);
     }
 
     .hero-card {
       position: relative;
-      border-radius: 26px;
-      background: radial-gradient(circle at top left, #1d253b 0, #020617 52%);
-      box-shadow: var(--shadow-card);
-      border: 1px solid rgba(148, 163, 184, 0.42);
+      border-radius: 24px;
+      background: radial-gradient(circle at top left, #e0f2fe 0, #ffffff 55%);
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(148, 163, 184, 0.6);
       padding: 1.5rem 1.4rem 1.25rem;
       overflow: hidden;
-    }
-
-    .hero-card::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(circle at -10% 0, rgba(56, 189, 248, 0.25), transparent 55%),
-        radial-gradient(circle at 120% 80%, rgba(180, 83, 9, 0.35), transparent 45%);
-      opacity: 0.9;
-      pointer-events: none;
     }
 
     .hero-card-inner {
@@ -315,28 +324,30 @@
     }
 
     .hero-card-title {
-      font-size: 0.96rem;
+      font-size: 0.95rem;
       font-weight: 600;
+      color: #0f172a;
     }
 
     .hero-card-tag {
       padding: 0.22rem 0.7rem;
       border-radius: 999px;
       font-size: 0.75rem;
-      border: 1px solid rgba(251, 191, 36, 0.9);
-      background: rgba(15, 23, 42, 0.84);
+      border: 1px solid rgba(245, 158, 11, 0.9);
+      background: #fef3c7;
       display: inline-flex;
       align-items: center;
       gap: 0.3rem;
+      color: #92400e;
     }
 
     .hero-card-tag span {
-      color: #facc15;
+      color: #f59e0b;
     }
 
     .hero-card p {
-      font-size: 0.84rem;
-      color: #e5e7eb;
+      font-size: 0.85rem;
+      color: #374151;
       margin-bottom: 0.75rem;
     }
 
@@ -346,12 +357,12 @@
       gap: 0.55rem;
       font-size: 0.84rem;
       margin-bottom: 0.8rem;
+      color: #374151;
     }
 
     .stars {
       font-size: 0.96rem;
-      color: #fbbf24;
-      text-shadow: 0 0 16px rgba(251, 191, 36, 0.6);
+      color: #f59e0b;
     }
 
     .hero-strip {
@@ -361,16 +372,17 @@
       font-size: 0.76rem;
       color: var(--muted);
       padding-top: 0.7rem;
-      border-top: 1px dashed rgba(148, 163, 184, 0.7);
+      border-top: 1px dashed rgba(148, 163, 184, 0.8);
     }
 
     .hero-strip span {
       display: inline-flex;
       align-items: center;
       gap: 0.3rem;
-      padding: 0.2rem 0.55rem;
+      padding: 0.2rem 0.6rem;
       border-radius: 999px;
-      background: rgba(15, 23, 42, 0.8);
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(209, 213, 219, 0.9);
     }
 
     .green-dot {
@@ -397,10 +409,11 @@
     }
 
     h2.section-title {
-      font-size: 1.48rem;
+      font-size: 1.5rem;
       letter-spacing: -0.03em;
       margin-top: 0.15rem;
       margin-bottom: 0.3rem;
+      color: #020617;
     }
 
     .section-desc {
@@ -411,24 +424,24 @@
 
     /* Services */
     .section--services {
-      background: radial-gradient(circle at top left, #0f172a 0, #020617 65%);
-      border-top: 1px solid rgba(31, 41, 55, 0.8);
-      border-bottom: 1px solid rgba(31, 41, 55, 0.8);
+      background:
+        radial-gradient(circle at top left, #bfdbfe 0, transparent 55%),
+        linear-gradient(to bottom, #f9fafb, #e5e7eb);
+      border-top: 1px solid rgba(209, 213, 219, 0.95);
+      border-bottom: 1px solid rgba(209, 213, 219, 0.95);
     }
 
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 1.4rem;
     }
 
     .service-card {
-      background: radial-gradient(circle at top left,
-                   rgba(15, 23, 42, 0.9),
-                   rgba(15, 23, 42, 0.96));
+      background: var(--card);
       border-radius: var(--radius-lg);
       border: 1px solid var(--border-soft);
-      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.8);
+      box-shadow: var(--shadow-soft);
       overflow: hidden;
       display: flex;
       flex-direction: column;
@@ -444,14 +457,14 @@
       height: 190px;
       object-fit: cover;
       display: block;
-      transform: scale(1.04);
+      transform: scale(1.02);
       transition: transform 0.35s ease, filter 0.35s ease;
       filter: saturate(1.05);
     }
 
     .service-card:hover .service-img {
-      transform: scale(1.09);
-      filter: saturate(1.2);
+      transform: scale(1.06);
+      filter: saturate(1.15);
     }
 
     .service-badge {
@@ -463,44 +476,49 @@
       font-size: 0.68rem;
       text-transform: uppercase;
       letter-spacing: 0.12em;
-      background: rgba(0,0,0,0.6);
-      color: #e5e7eb;
-      border: 1px solid rgba(148, 163, 184, 0.8);
+      background: rgba(0, 0, 0, 0.45);
+      color: #f9fafb;
+      border: 1px solid rgba(249, 250, 251, 0.8);
     }
 
     .service-body {
-      padding: 0.9rem 0.95rem 1rem;
+      padding: 0.9rem 1rem 1rem;
     }
 
     .service-title {
-      font-size: 0.98rem;
+      font-size: 1rem;
       margin-bottom: 0.35rem;
+      color: #111827;
     }
 
     .service-text {
-      font-size: 0.86rem;
+      font-size: 0.9rem;
       color: var(--muted);
       margin-bottom: 0.6rem;
     }
 
-    .service-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.35rem;
-      font-size: 0.74rem;
+    .service-columns {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.35rem 1.2rem;
+      font-size: 0.86rem;
+      color: #4b5563;
     }
 
-    .service-tag {
-      padding: 0.1rem 0.5rem;
-      border-radius: 999px;
-      background: rgba(15, 23, 42, 0.9);
-      border: 1px dashed rgba(107, 114, 128, 0.9);
-      color: #9ca3af;
+    .service-columns ul {
+      list-style: none;
+    }
+
+    .service-columns li::before {
+      content: "• ";
+      color: var(--accent-strong);
     }
 
     /* DHA section */
     .section--dha {
-      background: radial-gradient(circle at 120% 20%, rgba(59, 130, 246, 0.25), transparent 52%);
+      background:
+        radial-gradient(circle at 100% 0, rgba(191, 219, 254, 0.9) 0, transparent 55%),
+        linear-gradient(to bottom, #f9fafb, #e5e7eb);
     }
 
     .dha-grid {
@@ -527,16 +545,17 @@
       padding: 0.2rem 0.6rem;
       border-radius: 999px;
       font-size: 0.76rem;
-      border: 1px solid rgba(148, 163, 184, 0.8);
-      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid rgba(148, 163, 184, 0.9);
+      background: rgba(255, 255, 255, 0.95);
+      color: #374151;
     }
 
     .dha-card {
-      background: radial-gradient(circle at top, #111827 0, #020617 65%);
+      background: var(--card);
       border-radius: 22px;
       padding: 0.9rem;
-      border: 1px solid rgba(148, 163, 184, 0.4);
-      box-shadow: 0 20px 55px rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      box-shadow: var(--shadow-soft);
     }
 
     .dha-card img {
@@ -548,34 +567,35 @@
 
     /* Locations */
     .section--locations {
-      background: radial-gradient(circle at 10% 0, rgba(59,130,246,0.16), transparent 55%);
-      border-top: 1px solid rgba(31, 41, 55, 0.9);
-      border-bottom: 1px solid rgba(31, 41, 55, 0.9);
+      background: linear-gradient(to bottom, #f9fafb, #e5e7eb);
+      border-top: 1px solid rgba(209, 213, 219, 0.95);
+      border-bottom: 1px solid rgba(209, 213, 219, 0.95);
     }
 
     .locations-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1.4rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.2rem;
     }
 
     .location-card {
-      background: rgba(15, 23, 42, 0.92);
+      background: var(--card);
       border-radius: var(--radius-lg);
-      border: 1px solid rgba(75, 85, 99, 0.9);
+      border: 1px solid rgba(209, 213, 219, 0.95);
       padding: 1rem 1.1rem;
-      box-shadow: 0 18px 42px rgba(15, 23, 42, 0.85);
+      box-shadow: var(--shadow-soft);
       font-size: 0.9rem;
     }
 
     .location-card h3 {
-      margin-bottom: 0.35rem;
+      margin-bottom: 0.3rem;
       letter-spacing: -0.02em;
+      color: #111827;
     }
 
     .location-card p {
-      margin-bottom: 0.45rem;
-      color: #e5e7eb;
+      margin-bottom: 0.4rem;
+      color: #374151;
     }
 
     .location-meta {
@@ -585,17 +605,19 @@
 
     /* CTA / Contact */
     .section--cta {
-      background: radial-gradient(circle at bottom, rgba(34, 197, 94, 0.16), transparent 55%);
+      background:
+        radial-gradient(circle at bottom, rgba(187, 247, 208, 0.9) 0, transparent 60%),
+        linear-gradient(to bottom, #f9fafb, #e5e7eb);
     }
 
     .cta-card {
       background: radial-gradient(circle at top left,
-                   rgba(74, 222, 128, 0.3),
-                   rgba(15, 23, 42, 0.95));
+                   rgba(16, 185, 129, 0.25),
+                   #ffffff);
       border-radius: 24px;
       padding: 1.4rem 1.6rem 1.5rem;
-      border: 1px solid rgba(34, 197, 94, 0.65);
-      box-shadow: 0 22px 60px rgba(22, 163, 74, 0.8);
+      border: 1px solid rgba(22, 163, 74, 0.6);
+      box-shadow: 0 20px 50px rgba(22, 163, 74, 0.25);
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -610,47 +632,52 @@
     .cta-text h2 {
       font-size: 1.35rem;
       margin-bottom: 0.3rem;
+      color: #052e16;
     }
 
     .cta-text p {
       font-size: 0.9rem;
-      color: #e5f9ed;
+      color: #14532d;
     }
 
     .cta-actions {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      gap: 0.4rem;
+      gap: 0.5rem;
       font-size: 0.88rem;
     }
 
-    .cta-mail {
+    .cta-mail,
+    .cta-phone {
       display: inline-flex;
       align-items: center;
       gap: 0.45rem;
       padding: 0.6rem 1.2rem;
       border-radius: 999px;
-      background: #f9fafb;
+      background: #ffffff;
       color: #0f172a;
       font-weight: 600;
-      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.8);
+      box-shadow: 0 16px 30px rgba(15, 23, 42, 0.15);
+      border: 1px solid rgba(209, 213, 219, 0.9);
     }
 
-    .cta-mail span {
+    .cta-mail span,
+    .cta-phone span {
       font-size: 1.1rem;
     }
 
     .cta-note {
-      color: #d1fae5;
+      color: #14532d;
+      max-width: 19rem;
     }
 
     footer {
       padding: 1.4rem 0 1.3rem;
       font-size: 0.78rem;
       color: var(--muted);
-      background: #020617;
-      border-top: 1px solid rgba(31, 41, 55, 0.9);
+      background: #f3f4f6;
+      border-top: 1px solid rgba(209, 213, 219, 0.95);
     }
 
     .footer-inner {
@@ -662,19 +689,21 @@
     }
 
     .footer-inner a {
-      color: #9ca3af;
+      color: #4b5563;
     }
 
     .footer-inner a:hover {
-      color: var(--accent);
+      color: var(--accent-strong);
     }
 
     /* Responsive */
     @media (max-width: 960px) {
       .hero-grid,
-      .dha-grid,
-      .locations-grid {
+      .dha-grid {
         grid-template-columns: minmax(0, 1fr);
+      }
+      .locations-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
 
@@ -690,8 +719,11 @@
       .services-grid {
         grid-template-columns: minmax(0, 1fr);
       }
+      .locations-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
       .hero {
-        padding-top: 3rem;
+        padding-top: 2.7rem;
       }
       .cta-card {
         padding: 1.2rem 1.2rem 1.4rem;
@@ -717,8 +749,11 @@
     <div class="container">
       <nav class="nav">
         <div class="brand">
-          <span class="brand-name">Easy Clean Services</span>
-          <span class="brand-tagline">Katherine &amp; Darwin • Professional Cleaning</span>
+          <img src="ecs-logo-full.png" alt="Easy Clean Services logo" class="brand-logo" />
+          <div class="brand-text">
+            <span class="brand-name">EASY CLEAN SERVICES</span>
+            <span class="brand-tagline">Katherine • Darwin • Alice Springs – Commercial Cleaning</span>
+          </div>
         </div>
         <div class="nav-links">
           <a href="#services">Services</a>
@@ -734,42 +769,43 @@
     <!-- HERO -->
     <section class="hero">
       <div class="container hero-grid">
-        <div>
+        <div class="animate-in">
           <div class="badge">
             <span class="badge-dot"></span>
-            Local cleaners in Katherine &amp; Darwin, NT
+            Local commercial cleaners in Katherine, Darwin &amp; Alice Springs
           </div>
 
           <h1>
             <span class="hero-highlight">Serious cleaning,</span> without the drama.
           </h1>
           <p class="hero-sub">
-            Easy Clean Services delivers reliable residential, commercial, bond and NDIS cleaning
-            across Katherine and Darwin. Short notice cleans, regular schedules and DHA-level standards.
+            Easy Clean Services delivers reliable commercial, office and specialised cleaning across
+            Katherine, Darwin and Alice Springs. School terms, council sites, pubs, clinics and more –
+            all run to DHA-level standards.
           </p>
 
           <div class="hero-actions">
             <a href="mailto:info@easycleanservices.com.au" class="btn-primary">
               Email&nbsp;info@easycleanservices.com.au
             </a>
-            <button class="btn-ghost" type="button">
+            <button class="btn-ghost" type="button" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
               View services <span>↓</span>
             </button>
           </div>
 
           <div class="hero-meta">
-            <span>Serving <strong>Katherine East</strong> &amp; <strong>Berrimah / Darwin</strong></span>
-            <span class="meta-pill">Bond &amp; vacate specialists</span>
-            <span class="meta-pill">NDIS &amp; aged care friendly</span>
+            <span>Contact <strong>Mr Kavish</strong> on <strong><a href="tel:+61424861400">+61 424 861 400</a></strong></span>
+            <span class="meta-pill">DHA KPI achievement certificate</span>
+            <span class="meta-pill">Commercial &amp; specialised cleaning</span>
           </div>
         </div>
 
-        <aside class="hero-card">
+        <aside class="hero-card animate-in delay-2">
           <div class="hero-card-inner">
             <div class="hero-card-heading">
               <div>
                 <div class="hero-card-title">Recognised by Defence Housing Australia</div>
-                <div style="font-size:0.78rem;color:#d1d5db;">
+                <div style="font-size:0.78rem;color:#4b5563;">
                   KPI Achievement Certificate – 2017/18
                 </div>
               </div>
@@ -779,9 +815,9 @@
             </div>
 
             <p>
-              Our DHA Certificate of Achievement scores Easy Clean Services across emergency jobs,
-              bookings, completion, invoicing, quotes and workmanship. The same standard we bring to
-              every home and business in Katherine and Darwin.
+              Our DHA Certificate of Achievement scores Easy Clean Services across emergency response,
+              bookings, completion, invoicing, quoting and workmanship. The same standard we bring to
+              schools, childcare centres, pubs, medical sites and offices.
             </p>
 
             <div class="hero-rating">
@@ -792,7 +828,7 @@
             <div class="hero-strip">
               <span><span class="green-dot"></span> Emergency &amp; scheduled cleans</span>
               <span>Bond / vacate cleans that hit the checklist</span>
-              <span>Trusted by property managers &amp; local families</span>
+              <span>Trusted by property managers &amp; local organisations</span>
             </div>
           </div>
         </aside>
@@ -801,139 +837,77 @@
 
     <!-- SERVICES -->
     <section id="services" class="section--services">
-      <div class="container">
+      <div class="container animate-in delay-1">
         <div class="section-header">
           <div class="eyebrow">Services</div>
           <h2 class="section-title">What we clean (in simple words)</h2>
           <p class="section-desc">
-            Short headings. Small paragraphs. Real-world cleaning services for Katherine and Darwin.
-            Swap these stock images later if you have your own photos.
+            Short headings. Small paragraphs. Real-world commercial and specialised cleaning across the Northern Territory.
           </p>
         </div>
 
         <div class="services-grid">
-          <!-- Residential -->
+          <!-- Commercial / Office -->
           <article class="service-card">
             <div class="service-img-wrap">
+              <!-- Aussie-looking office / commercial image -->
               <img class="service-img"
-                   src="https://images.pexels.com/photos/6197127/pexels-photo-6197127.jpeg?auto=compress&cs=tinysrgb&w=800"
-                   alt="Cleaner vacuuming a modern living room">
-              <span class="service-badge">Homes</span>
+                   src="https://images.pexels.com/photos/7648300/pexels-photo-7648300.jpeg?auto=compress&cs=tinysrgb&w=900"
+                   alt="Cleaner wiping glass in a modern office building">
+              <span class="service-badge">Commercial</span>
             </div>
             <div class="service-body">
-              <h3 class="service-title">Residential Cleaning</h3>
+              <h3 class="service-title">Commercial &amp; Office Cleaning</h3>
               <p class="service-text">
-                Regular or one-off house cleans in Katherine and Darwin. Kitchens, bathrooms,
-                bedrooms and living areas taken care of properly.
+                Daily, weekly or holiday-period cleaning for workplaces and public sites in Katherine,
+                Darwin and Alice Springs.
               </p>
-              <div class="service-tags">
-                <span class="service-tag">Weekly / fortnightly</span>
-                <span class="service-tag">Move-in tidy-up</span>
+              <div class="service-columns">
+                <ul>
+                  <li>School cleaning / holiday cleaning</li>
+                  <li>Childcare cleaning</li>
+                  <li>Government buildings</li>
+                  <li>Council facilities</li>
+                  <li>Aboriginal corporations</li>
+                </ul>
+                <ul>
+                  <li>Pub &amp; hospitality cleaning</li>
+                  <li>Medical &amp; laboratory centres</li>
+                  <li>Caravan &amp; bus cleaning</li>
+                  <li>Body corporate cleaning</li>
+                </ul>
               </div>
             </div>
           </article>
 
-          <!-- Commercial -->
+          <!-- Specialised -->
           <article class="service-card">
             <div class="service-img-wrap">
+              <!-- More “specialised cleaning” type image -->
               <img class="service-img"
-                   src="https://images.pexels.com/photos/4239031/pexels-photo-4239031.jpeg?auto=compress&cs=tinysrgb&w=800"
-                   alt="Cleaner wiping a desk in an office">
-              <span class="service-badge">Business</span>
+                   src="https://images.pexels.com/photos/6196518/pexels-photo-6196518.jpeg?auto=compress&cs=tinysrgb&w=900"
+                   alt="Cleaner using professional floor cleaning equipment">
+              <span class="service-badge">Specialised</span>
             </div>
             <div class="service-body">
-              <h3 class="service-title">Commercial &amp; Office</h3>
+              <h3 class="service-title">Specialised Cleaning</h3>
               <p class="service-text">
-                Offices, clinics, shops and light commercial spaces. After-hours or early-morning
-                cleans so your team walks into a fresh space.
+                Project work and heavy-duty cleaning when a standard mop and vacuum aren’t enough.
               </p>
-              <div class="service-tags">
-                <span class="service-tag">Contract cleaning</span>
-                <span class="service-tag">Small &amp; medium sites</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Bond -->
-          <article class="service-card">
-            <div class="service-img-wrap">
-              <img class="service-img"
-                   src="https://images.pexels.com/photos/6953942/pexels-photo-6953942.jpeg?auto=compress&cs=tinysrgb&w=800"
-                   alt="Cleaner doing end of lease cleaning in a kitchen">
-              <span class="service-badge">Bond</span>
-            </div>
-            <div class="service-body">
-              <h3 class="service-title">Bond &amp; Vacate</h3>
-              <p class="service-text">
-                Full end-of-lease cleans that hit property manager and DHA checklists – ovens, fans,
-                skirting, walls and wet areas.
-              </p>
-              <div class="service-tags">
-                <span class="service-tag">Detailed attention</span>
-                <span class="service-tag">Photos on request</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- NDIS -->
-          <article class="service-card">
-            <div class="service-img-wrap">
-              <img class="service-img"
-                   src="https://images.pexels.com/photos/9541721/pexels-photo-9541721.jpeg?auto=compress&cs=tinysrgb&w=800"
-                   alt="Cleaner assisting a client in their home">
-              <span class="service-badge">NDIS</span>
-            </div>
-            <div class="service-body">
-              <h3 class="service-title">NDIS &amp; Aged Care</h3>
-              <p class="service-text">
-                Respectful cleaning support for NDIS participants and older clients. Same faces,
-                reliable timing, safe products.
-              </p>
-              <div class="service-tags">
-                <span class="service-tag">Support workers welcome</span>
-                <span class="service-tag">Flexible plans</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Deep -->
-          <article class="service-card">
-            <div class="service-img-wrap">
-              <img class="service-img"
-                   src="https://images.pexels.com/photos/4239146/pexels-photo-4239146.jpeg?auto=compress&cs=tinysrgb&w=800"
-                   alt="Deep cleaning tiles and grout in bathroom">
-              <span class="service-badge">Deep</span>
-            </div>
-            <div class="service-body">
-              <h3 class="service-title">Deep &amp; Spring Cleans</h3>
-              <p class="service-text">
-                Once-off heavy cleans for when things have built up. Perfect before or after a big
-                life change or rent inspection.
-              </p>
-              <div class="service-tags">
-                <span class="service-tag">Bathrooms &amp; kitchens</span>
-                <span class="service-tag">High-touch zones</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- DHA / Special -->
-          <article class="service-card">
-            <div class="service-img-wrap">
-              <img class="service-img"
-                   src="https://images.pexels.com/photos/6195118/pexels-photo-6195118.jpeg?auto=compress&cs=tinysrgb&w=800"
-                   alt="Exterior of a modern house being cleaned">
-              <span class="service-badge">DHA / Custom</span>
-            </div>
-            <div class="service-body">
-              <h3 class="service-title">DHA &amp; Custom Cleaning</h3>
-              <p class="service-text">
-                Cleaning programs for DHA homes, inspections and special requirements. We work with
-                your process, not against it.
-              </p>
-              <div class="service-tags">
-                <span class="service-tag">DHA experience</span>
-                <span class="service-tag">Checklists &amp; reporting</span>
+              <div class="service-columns">
+                <ul>
+                  <li>Carpet cleaning</li>
+                  <li>Floor scrubbing</li>
+                  <li>Strip and seal</li>
+                  <li>High pressure cleaning</li>
+                  <li>Mould remediation</li>
+                </ul>
+                <ul>
+                  <li>High window cleaning</li>
+                  <li>COVID-19 cleaning</li>
+                  <li>Commercial kitchen cleaning</li>
+                  <li>Astro turf power broom cleaning</li>
+                </ul>
               </div>
             </div>
           </article>
@@ -944,7 +918,7 @@
     <!-- DHA CERTIFICATE / TRUST -->
     <section id="dha" class="section--dha">
       <div class="container dha-grid">
-        <div class="dha-text">
+        <div class="dha-text animate-in">
           <div class="section-header">
             <div class="eyebrow">Trust &amp; quality</div>
             <h2 class="section-title">Backed by a DHA Certificate of Achievement</h2>
@@ -959,8 +933,9 @@
             bookings, completion, invoicing, quoting and workmanship.
           </p>
           <p>
-            That means when you book us for your home, rental or business in Katherine or Darwin,
-            you’re booking a team that already works to strict standards and timeframes.
+            That means when you book us for your school, childcare centre, council facility, pub,
+            medical site or office, you’re choosing a team that already works to strict standards and
+            timeframes.
           </p>
 
           <div class="dha-pills">
@@ -972,9 +947,9 @@
           </div>
         </div>
 
-        <aside class="dha-card">
-          <!-- Replace src with your actual path -->
-          <img src="images/dha-certificate.png"
+        <aside class="dha-card animate-in delay-2">
+          <!-- DHA certificate in root -->
+          <img src="dha-certificate.png"
                alt="Defence Housing Australia Certificate of Achievement for Easy Clean Services">
         </aside>
       </div>
@@ -982,32 +957,37 @@
 
     <!-- LOCATIONS -->
     <section id="locations" class="section--locations">
-      <div class="container">
+      <div class="container animate-in">
         <div class="section-header">
           <div class="eyebrow">Service areas</div>
-          <h2 class="section-title">Based in Katherine &amp; Darwin</h2>
+          <h2 class="section-title">Based in the Territory, covering three key regions</h2>
           <p class="section-desc">
-            Two Northern Territory bases so we can cover both regions without pretending
-            we’re “Australia-wide”.
+            We’re based in Katherine East and Berrimah, and operate across Katherine, Darwin and Alice Springs as whole regions – no made-up “Australia-wide” claims.
           </p>
         </div>
 
         <div class="locations-grid">
           <article class="location-card">
             <h3>Katherine, NT</h3>
-            <p>11 Bradshaw Crescent<br>Katherine East NT 0850</p>
+            <p>Commercial and specialised cleaning across Katherine and Katherine East.</p>
             <p class="location-meta">
-              Local cleaning for homes, rentals and businesses across Katherine, Katherine East and nearby areas.
-              Priority service for this region.
+              Schools, childcare centres, government buildings, local businesses and body corporates.
             </p>
           </article>
 
           <article class="location-card">
             <h3>Darwin, NT</h3>
-            <p>38 Reuben Avenue<br>Berrimah NT 0828</p>
+            <p>Commercial cleaning across Darwin, Berrimah, Palmerston and surrounding suburbs.</p>
             <p class="location-meta">
-              Servicing Berrimah, Darwin, Palmerston and surrounds. Ideal for DHA housing, small
-              commercial sites and regular home cleans.
+              Ideal for council facilities, pubs, medical and laboratory centres, and DHA-related work.
+            </p>
+          </article>
+
+          <article class="location-card">
+            <h3>Alice Springs, NT</h3>
+            <p>Commercial and specialised cleaning throughout the Alice Springs region.</p>
+            <p class="location-meta">
+              From schools and community organisations to hospitality, caravan &amp; bus cleaning and more.
             </p>
           </article>
         </div>
@@ -1017,11 +997,11 @@
     <!-- CTA / CONTACT -->
     <section id="contact" class="section--cta">
       <div class="container">
-        <div class="cta-card">
+        <div class="cta-card animate-in">
           <div class="cta-text">
             <h2>Ready to make the cleaning someone else’s problem?</h2>
             <p>
-              Send us a quick email with your suburb (Katherine or Darwin) and what you need cleaned.
+              Send us a quick email or call Mr Kavish to talk through your site in Katherine, Darwin or Alice Springs.
               We’ll reply with simple options and clear pricing.
             </p>
           </div>
@@ -1029,8 +1009,11 @@
             <a href="mailto:info@easycleanservices.com.au" class="cta-mail">
               <span>✉️</span> info@easycleanservices.com.au
             </a>
+            <a href="tel:+61424861400" class="cta-phone">
+              <span>📞</span> +61 424 861 400 (Mr Kavish)
+            </a>
             <div class="cta-note">
-              Include: address, type of clean (home, bond, NDIS, commercial) and preferred days.
+              Include: region (Katherine / Darwin / Alice Springs), type of site and whether you need ongoing or one-off cleaning.
             </div>
           </div>
         </div>
@@ -1041,9 +1024,10 @@
   <!-- FOOTER -->
   <footer>
     <div class="container footer-inner">
-      <span>© <span id="year"></span> Easy Clean Services. Katherine &amp; Darwin, Northern Territory.</span>
+      <span>© <span id="year"></span> Easy Clean Services. Katherine, Darwin &amp; Alice Springs, Northern Territory.</span>
       <span>
-        Email: <a href="mailto:info@easycleanservices.com.au">info@easycleanservices.com.au</a>
+        Email: <a href="mailto:info@easycleanservices.com.au">info@easycleanservices.com.au</a> &nbsp;|&nbsp;
+        Phone: <a href="tel:+61424861400">+61 424 861 400</a>
       </span>
     </div>
   </footer>
