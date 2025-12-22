@@ -225,11 +225,12 @@
       color: #020617;
     }
 
-    .hero-highlight {
-      background: linear-gradient(to right, #0369a1, #16a34a);
-      -webkit-background-clip: text;
-      color: transparent;
-    }
+    ..hero-highlight {
+  background: linear-gradient(to right, #0369a1, #16a34a);
+  background-clip: text;           /* standard */
+  -webkit-background-clip: text;   /* required for Chrome/Safari */
+  color: transparent;
+}
 
     .hero-sub {
       font-size: 1rem;
