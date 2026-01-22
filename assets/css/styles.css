@@ -1,4 +1,4 @@
-<style>
+
     :root {
       --bg: #f3f4f8;
       --bg-alt: #e5ecf8;
@@ -990,4 +990,10 @@
     grid-template-columns: minmax(0, 1fr);
   }
 }
-  </style>
+/* Ensure pages with short content push footer down */
+.page-wrap {
+  min-height: calc(100vh - 140px); /* header + footer buffer */
+}
+.section--insights {
+  padding-bottom: 4.5rem;
+}
