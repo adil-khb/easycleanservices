@@ -8,6 +8,27 @@
 
   <link rel="icon" type="image/png" href="../assets/img/ecs-logo-icon.png" />
   <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <link rel="canonical" href="https://easycleanservices.com.au/insights/end-of-lease-checklist.html" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "End of lease cleaning checklist (what agents actually inspect)",
+  "datePublished": "2026-01-22",
+  "dateModified": "2026-01-22",
+  "image": "https://easycleanservices.com.au/assets/img/blog-end-of-lease.jpg",
+  "author": { "@type": "Organization", "name": "Easy Clean Services" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Easy Clean Services",
+    "logo": { "@type": "ImageObject", "url": "https://easycleanservices.com.au/assets/img/ecs-logo-icon.png" }
+  },
+  "mainEntityOfPage": "https://easycleanservices.com.au/insights/end-of-lease-checklist.html",
+  "description": "A practical end of lease cleaning checklist based on what agents actually inspect — to help you pass inspection the first time."
+}
+</script>
 </head>
 
 <body>
@@ -54,7 +75,11 @@
       <div class="article">
         <div class="article-meta" style="margin-bottom: 0.8rem;">
           <span class="insight-tag" style="text-transform:none;">Residential guide</span>
-          <span>Updated: Jan 2026</span>
+          <div class="article-meta" style="margin-bottom: 0.8rem;">
+  <span class="insight-tag" style="text-transform:none;">Residential guide</span>
+  <span>Last updated: <time datetime="2026-01-22">22 Jan 2026</time></span>
+  <span>Reading time: <span id="readingTime">—</span></span>
+</div>
         </div>
 
         <p>
@@ -146,5 +171,18 @@
 </footer>
 
 <script src="../assets/js/script.js" defer></script>
+<script>
+  (function () {
+    const article = document.querySelector(".article");
+    const out = document.getElementById("readingTime");
+    if (!article || !out) return;
+
+    const text = article.innerText || "";
+    const words = text.trim().split(/\s+/).filter(Boolean).length;
+    const minutes = Math.max(1, Math.round(words / 200)); // ~200 wpm
+    out.textContent = minutes + " min";
+  })();
+</script>
 </body>
+
 </html>
