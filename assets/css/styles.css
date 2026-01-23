@@ -1035,3 +1035,44 @@ body.has-sticky-footer {
 body.has-sticky-footer main {
   flex: 1;
 }
+/* Insights quick links (professional, text-forward) */
+.quick-links-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin-top: 0.95rem;
+}
+
+.quick-link-item {
+  display: block;
+  padding: 0.85rem 0.95rem;
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.quick-link-item:hover {
+  border-color: rgba(59, 130, 246, 0.45);
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+  transform: translateY(-1px);
+}
+
+.quick-link-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #0f172a;
+}
+
+.quick-link-desc {
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  color: #475569;
+}
+
+@media (max-width: 640px) {
+  .quick-links-grid {
+    grid-template-columns: 1fr;
+  }
+}
